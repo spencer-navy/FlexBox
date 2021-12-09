@@ -1,0 +1,240 @@
+/* star(*) applies to everything in the webpage*/
+
+* {
+    margin: 0;
+}
+
+/* everything in the html*/
+html {
+    height: 100vh;
+}
+
+/* EVERYTHING BETWEEN BODY TAGS*/
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: white;
+}
+
+/*navbar*/
+.wrapper-home{
+    padding-bottom: 20px;
+    background-color: #D4C7EA;
+    width: 100%;
+    height: 20px;
+    position: static;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.wrapper-home ul {
+    list-style: none;
+    position: sticky;
+    top: 0;
+}
+.wrapper-home ul li {
+    float: left;
+    padding: 5px;
+}
+.wrapper-home ul li a{
+    text-decoration: none;
+    color: #4b2b2e;
+    font-weight: 500;
+    font-size:20px;
+    padding: 10px;
+}
+.wrapper-home ul li a:hover{
+    color: white;
+}
+.box0{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Home Page Splash*/
+.splash {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.splash h1{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.purple-splash{
+    width: 100%;
+    height: 200px;
+}
+
+/* FIRST FOUR BOXES */
+#section1{
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 20px;
+    padding-top: 40px;
+}
+.sub{
+    color: #9672B5;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.box1 {
+    background-color: #D4C7EA;
+    height: 150px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-top: 40px solid #9672B5;
+}
+.box2 {
+    background-color: #D4C7EA;
+    height: 150px;
+    width: 300px;
+    border-top: 40px solid #9672B5;
+}
+.box3 {
+    background-color: #D4C7EA;
+    height: 150px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-top: 40px solid #9672B5;
+}
+.box4 {
+    background-color: #D4C7EA;
+    height: 150px;
+    width: 300px;
+    border-top: 40px solid #9672B5;
+}
+
+
+/* BIG BOX */
+.bigbox {
+    box-sizing: border-box;
+    height: 150px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+.bigbox1 {
+    background-color: #9672B5;
+    height: 150px;
+    width: 100%;
+}
+.lorem{
+    padding: 20px;
+    text-align: center;
+}
+/* LAST TWO BOXES */
+.section3{
+    box-sizing: border-box;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.box5 {
+    background-color: #D4C7EA;
+    height: 150px;
+    width: 400px;
+    margin: 8px;
+    padding: 5px;
+    border-top: 40px solid #9672B5;
+}
+.box6 {
+    background-color: #D4C7EA;
+    height: 150px;
+    width: 400px;
+    margin: 8px;
+    padding: 5px;
+    border-top: 40px solid #9672B5;
+}
+/* Footer */
+.footer {
+    height: 30px;
+    width: 100%;
+    position: static;
+    left: 0;
+    bottom: 0;
+    background-color: #D4C7EA;
+    border-top: 2px solid;
+    border-color: black;
+    color: #9672B5;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* WHEN BROWSER WIDTH 800PX OR LESS */
+@media screen and (max-width: 800px) {
+    .box1{width: 100%;}
+    .box2{width: 100%;}
+    .box3{width: 100%;}
+    .box4{width: 100%;}
+    .box5{width: 100%;}
+    .box6{width: 100%;}
+
+    .wrapper-main-about{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        position: relative;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .section1{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 20px 20px;
+        padding-top: 40px;
+    }
+    .section3{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+}
+
+/* WHEN BROWSER WIDTH IS 800PX OR MORE */
+@media screen and (min-width: 800px) {
+    .box1{width: 250px;}
+    .box2{width: 250px;}
+    .box3{width: 250px;}
+    .box4{width: 250px;}
+    .box5{width: 250px;}
+    .box6{width: 250px;}
+
+    }
+    .wrapper-main-about{
+        display: flex;
+        margin: 8px;
+        flex-wrap: wrap;
+    }
+    .container{
+        display: flex;
+        margin: 8px;
+    }
+}
